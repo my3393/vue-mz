@@ -1,0 +1,103 @@
+@import './common/mixins.less';
+
+.cinema-list {
+  .cinema-list-tag {
+    .border-1-bottom;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 44px;
+    right: 0;
+    text-align: center;
+    background-color: #fff;
+    z-index: 2000;
+
+    .cinema-list-tag-name {
+      display: flex;
+      position: relative;
+
+      li {
+        flex: 1;
+        line-height: 49px;
+        font-size: 14px;
+        color: #191a1b;
+
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .cinema-list-wrap {
+    padding: 94px 0 49px;
+    .cinema-list-item {
+      .border-1-bottom;
+      height: 45px;
+      position: relative;
+      background-color: #fff;
+      padding: 15px;
+      box-sizing: content-box;
+
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .cinema-info-lf {
+        flex: 1;
+        text-align: left;
+        padding-right: 15px;
+        overflow: hidden;
+
+        span {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .cinema-name {
+          color: #191a1b;
+          font-size: 15px;
+        }
+
+        .cinema-address {
+          color: #797d82;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+      }
+
+      .cinema-info-rt {
+        flex-shrink: 0;
+        width: 66px;
+        text-align: right;
+
+        .cinema-gpsAddress {
+          display: block;
+          font-size: 11px;
+          color: #797d82;
+          margin-top: 5px;
+        }
+
+        .upon {
+          color: #ff5f16;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+.price-fmt {
+  font-size: 15px;
+  color: #ff5f16;
+
+  i {
+    font-size: 11px;
+    font-style: normal;
+  }
+}
