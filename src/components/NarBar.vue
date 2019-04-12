@@ -1,10 +1,7 @@
 <template>
   <div>
     <ul class="nav-bar">
-        <li 
-        v-for="(tab,index) in tabs"
-        :key="index"
-        >
+        <li  v-for="(tab,index) in tabs" :key="index">
           <router-link :to="tab.href" active-class="active">
             <i :class="['iconfont', tab.icon]"></i>
             <span> {{tab.name}} </span>
